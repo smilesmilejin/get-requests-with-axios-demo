@@ -59,21 +59,24 @@ axios
 ////////////////////////
 // Using Query Params //
 ////////////////////////
+require('dotenv').config();
+const { env } = require('node:process');
+const apiKey = env.API_KEY;
 
-// axios
-//   .get('https://us1.locationiq.com/v1/search.php', {
-//     params: {
-//       key: process.env['api_key'],
-//       q: 'Seattle, Washington, USA',
-//       format: 'json',
-//     },
-//   })
-//   .then((response) => {
-//     console.log('success!', response.data);
-//   })
-//   .catch((error) => {
-//     console.log('error!', error.response.data);
-//   });
+axios
+  .get('https://us1.locationiq.com/v1/search.php', {
+    params: {
+      key: apiKey,
+      q: 'Seattle, Washington, USA',
+      format: 'json',
+    },
+  })
+  .then((response) => {
+    console.log('success!', response.data);
+  })
+  .catch((error) => {
+    console.log('error!', error.response.data);
+  });
 
 
 //////////////////////////////
