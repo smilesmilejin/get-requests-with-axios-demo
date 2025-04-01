@@ -1,0 +1,33 @@
+{
+  "name": "get-requests-with-axios-demo",
+  "version": "1.0.0",
+  "description": "Example code that shows off making GET requests using Axios in JavaScript",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "npx eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdaGold/get-requests-with-axios-demo.git"
+  },
+  "author": "Ada Developers Academy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdaGold/get-requests-with-axios-demo/issues"
+  },
+  "homepage": "https://github.com/AdaGold/get-requests-with-axios-demo#readme",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.22.0",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "globals": "^16.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.8.4"
+  }
+}
