@@ -59,9 +59,11 @@ axios
 ////////////////////////
 // Using Query Params //
 ////////////////////////
-// require('dotenv').config();
-// const { env } = require('node:process');
-// const apiKey = env.API_KEY;
+
+// const dotEnv = require('dotenv');
+
+// dotEnv.config(); // Load variables from .env
+// const apiKey = process.env.API_KEY; // Access the API_KEY variable
 
 // axios
 //   .get('https://us1.locationiq.com/v1/search.php', {
